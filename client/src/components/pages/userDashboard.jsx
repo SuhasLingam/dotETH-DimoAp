@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card";
 import Filter from "../../assets/filter.svg";
+import Navbar from "../navbar";
 
 const CardData = [
   {
@@ -68,6 +69,7 @@ const CardData = [
 const userDashboard = () => {
   return (
     <div>
+      <Navbar />
       <div>
         <img
           className="w-[1400px] ml-[3rem] mx-11 mt-8 "

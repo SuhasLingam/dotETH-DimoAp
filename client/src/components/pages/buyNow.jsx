@@ -1,10 +1,14 @@
 import React from "react";
 import BuyNowCard from "../buyNowCard";
+import Navbar from "../navbar";
 
 const buyNow = () => {
   return (
-    <div className="w-full h-max">
-      <BuyNowCard />
+    <div>
+      <Navbar />
+      <div className="h-max w-full">
+        <BuyNowCard />
+      </div>
     </div>
   );
 };

@@ -1,16 +1,37 @@
-import Navbar from "./components/navbar";
 import LandingPage from "./components/landing";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserDashboard from "./components/pages/userDashboard";
 import BuyNow from "./components/pages/buyNow";
+import "@rainbow-me/rainbowkit/styles.css";
+import { http, createConfig } from "wagmi";
+import { RainbowKitProvider, getDefaultConfig } from "@rainbow-me/rainbowkit";
+import { WagmiProvider } from "wagmi";
+import { walletConnect } from "wagmi/connectors";
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { xdcTestnet } from "viem/chains";
+
+const queryClient = new QueryClient();
+export const config = getDefaultConfig({
+  appName: "Vit-ap",
+  projectId: "1ac4ef6af51b824c238d75abeb8487e7",
+  chains: [xdcTestnet],
+});
 
 function App() {
   return (
-    <div className="h-screen w-full">
-      <Navbar />
-      <LandingPage />
-      <UserDashboard />
-      <BuyNow />
-    </div>
+    <WagmiProvider config={config}>
+      <QueryClientProvider client={queryClient}>
+        <RainbowKitProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/dashboard" element={<UserDashboard />} />
+              <Route path="/buy" element={<BuyNow />} />
+            </Routes>
+          </BrowserRouter>
+        </RainbowKitProvider>
+      </QueryClientProvider>
+    </WagmiProvider>
   );
 }
 
