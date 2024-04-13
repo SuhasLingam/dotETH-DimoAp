@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        customFont: ['"NavButtonFont"', "DM Sans"],
+        customFont: ['"customFont"', "DM Sans"],
+      },
+      backgroundImage: {
+        "test-bg": "url('../src/assets/unsplash_E8Ufcyxz514.png')",
       },
     },
   },
