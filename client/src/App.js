@@ -7,6 +7,8 @@ function App() {
   return (
     <div className="h-screen w-full">
       <Navbar />
+      <LandingPage />
+      <UserDashboard />
       <BuyNow />
     </div>
   );

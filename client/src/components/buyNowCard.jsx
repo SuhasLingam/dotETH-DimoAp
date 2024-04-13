@@ -2,7 +2,7 @@ import React from "react";
 
 const buyNowCard = () => {
   return (
-    <div className="w-full flex flex-row">
+    <div className="w-full flex flex-row justify-center items-center">
       {/**Image BG */}
       <div className="w-1/3 h-max">
         <div className="w-[4rem] h-[30rem]">
@@ -23,29 +23,34 @@ const buyNowCard = () => {
         </div>
       </div>
       {/** Values and others */}
-      <div className=" w-2/3">
-        <p className="font-sans text-4xl px-[6rem] pb-7 pt-11">
+      <div className="flex flex-col justify-center w-2/3 items-center">
+        <p className="font-customFont text-4xl pb-11 px-7">
           Decentralized digital marketplace for design templates. Buy or mint
           exclusive digital assets. Our platform compensates the contributors
           fairly
         </p>
-
-        <div className="grid grid-rows-2 grid-flow-col items-center justify-center space-y-4 space-x-[5rem]">
-          <p className="px-8 py-5 text-xl font-bold rounded-full w-max bg-[#F4F4F4]">
+        <div className="flex gap-5 m-4 ">
+          <button className="bg-[#F4F4F4] font-semibold px-6 py-4 rounded-full border-[0.1px] border-gray-700">
             2 Downloads
-          </p>
-          <p className="font-bold text-xl  flex items-center">Current Price</p>
-          <p className="px-8 py-5 text-xl font-bold  rounded-full w-max bg-[#F4F4F4]">
-            Filetype: SVG
-          </p>
-          <p className="border-black flex items-center  border-2 text-[#4F33A3] px-8 py-3 rounded-full font-customFont text-xl">
-            329.009 ETH
-          </p>
+          </button>
+          <button className="bg-[#F4F4F4] font-semibold px-6 py-4 rounded-full border-[0.1px] border-gray-700">
+            FileType: SVG
+          </button>
         </div>
-
-        <div>
-          <a>Checkout</a>
+        <div className="flex gap-5 m-4">
+          <button className="font-bold px-6 py-4 rounded-full">
+            Current Price
+          </button>
+          <button className="font-semibold px-6 py-4 rounded-full border-[0.1px] border-violet-900 text-violet-900">
+            FileType: SVG
+          </button>
         </div>
+        <div className="flex items-center justify-center">
+          <button className="bg-[#5a4fcf] text-white  px-6 py-4 font-semibold rounded-full">
+            Checkout
+          </button>
+        </div>
+                
       </div>
     </div>
   );
