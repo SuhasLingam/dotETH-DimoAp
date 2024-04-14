@@ -10,6 +10,7 @@ import { walletConnect } from "wagmi/connectors";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { xdcTestnet } from "viem/chains";
 import DesignerDashboard from "./components/pages/designerDashboard";
+import Popup from "./components/popup";
 
 const queryClient = new QueryClient();
 export const config = getDefaultConfig({
@@ -29,6 +30,7 @@ function App() {
               <Route path="/dashboard" element={<UserDashboard />} />
               <Route path="/buy" element={<BuyNow />} />
               <Route path="/designer" element={<DesignerDashboard />} />
+              <Route path="/popup" element={<Popup />} />
             </Routes>
           </BrowserRouter>
         </RainbowKitProvider>

@@ -22,6 +22,12 @@ const Navbar = () => {
     }
   };
 
+  const handleSubmitDesigner = () => {
+    if (isConnected) {
+      navigate("/designer");
+    }
+  };
+
   return (
     <div>
       <div className="flex flex-row items-center justify-between h-[90px] border-b-[#efefef] border-b-2">
@@ -46,7 +52,11 @@ const Navbar = () => {
             </button>
           </div>
           <div className="bg-white text-[#3D00B7] rounded-full border-2 border-[#3D00B7] px-8 py-3 ">
-            <a>Designer Login</a>
+            <button onClick={handleSubmitDesigner}>
+              {account.status === "connected"
+                ? "Designer Dashboard"
+                : "Designer Login"}
+            </button>
           </div>
         </div>
       </div>

@@ -1,68 +1,16 @@
 import React from "react";
 import Card from "../Card";
 import Filter from "../../assets/filter.svg";
+import UserHistory from "./user";
 import Navbar from "../navbar";
 
 const CardData = [
   {
     name: "ArtCrypto",
-    price: "11 TXDC",
+    price: "100 TXDC",
     username: "ArtCrypto",
-  },
-  {
-    name: "Heyyy",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "Devam",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "ArtCrypto",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "ArtCrypto",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "ArtCrypto",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "ArtCrypto",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "ArtCrypto",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "ArtCrypto",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "ArtCrypto",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "ArtCrypto",
-    price: "10 TXDC",
-    username: "ArtCrypto",
-  },
-  {
-    name: "ArtCrypto",
-    price: "10 TXDC",
-    username: "ArtCrypto",
+    image:
+      "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
   },
 ];
 
@@ -77,7 +25,7 @@ const userDashboard = () => {
           alt="Filter"
         />
       </div>
-      <div className="grid grid-flow-row grid-cols-6 grid-rows-auto my-1 mx-[50px]">
+      <div className="grid grid-flow-row mt-[6rem] grid-cols-6 grid-rows-auto my-1 mx-[50px]">
         {CardData.map((item, index) => {
           return (
             <Card
@@ -85,10 +33,12 @@ const userDashboard = () => {
               name={item.name}
               price={item.price}
               username={item.username}
+              image={item.image}
             />
           );
         })}
       </div>
+      <UserHistory />
     </div>
   );
 };
