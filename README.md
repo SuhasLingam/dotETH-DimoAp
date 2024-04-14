@@ -2,6 +2,15 @@
 
 Tokencraft is a groundbreaking web3 design marketplace built on the [insert blockchain platform - e.g., XDC Network or Ethereum] blockchain. We empower designers to own their work, earn fair compensation, and unlock the true value of their creations.
 
+## Problem
+
+Existing design marketplaces leave creators underpaid and undervalue their work. Limited revenue sharing models and rampant piracy stifle creativity and hinder the growth of high-quality design assets.
+
+## Solution
+
+Tokencraft leverages web3 technology to create a fairer and more secure design ecosystem:
+
+
 
 ## Key Technologies Used
 - **React**: For a dynamic and responsive client-side application.
