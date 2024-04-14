@@ -41,8 +41,6 @@ Community
 
   
 
- ## ***Together, let's craft a new future for design ownership with Tokencraft!***
-
 
 ## Getting Started
 
