@@ -38,6 +38,11 @@ Community
 - **Hardhat**: A development environment for compiling, deploying, testing, and debugging Ethereum software.
 - **Rainbow Wallet**: Integrated for a seamless, secure crypto wallet experience.
 - **Wagmi**: A set of React Hooks for Ethereum, enhancing the development of the web3 frontend.
+- **Remix**:  A full-stack web framework for building user interfaces.
+- **Tailwind CSS**:  A utility-first CSS framework for rapidly building custom designs.
+- **HTML**: The standard markup language for creating web pages and applications.
+- **CSS**: A language for describing the styling of a document written in HTML.
+- **XDC Network** :XDC Network is an enterprise-grade, public blockchain platform known for its high transaction speed, low fees, and security. It aims to revolutionize trade finance by enabling the tokenization of real-world assets
 
   
 
