@@ -26,7 +26,7 @@ Tokencraft fosters a vibrant community of creators and buyers:
 
 **Buyers:** Access high-quality, secure design assets and support talented creators.
 
-***This is a work-in-progress for the [DIMO HACK VIT-AP] hackathon. We're actively developing the Tokencraft platform and welcome contributions!*
+*This is a work-in-progress for the [DIMO HACK VIT-AP] hackathon. We're actively developing the Tokencraft platform and welcome contributions!*
 
 
 
