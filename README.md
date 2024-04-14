@@ -8,23 +8,23 @@ Existing design marketplaces leave creators underpaid and undervalue their work.
 
 ## Solution
 
-Tokencraft leverages web3 technology to create a fairer and more secure design ecosystem:
+#### Tokencraft leverages web3 technology to create a fairer and more secure design ecosystem:
 
 
-**Tokenization:** Design files are tokenized, granting creators ownership and control.
+- **Tokenization:** Design files are tokenized, granting creators ownership and control.
 
-**Dynamic Pricing:** Token value determines price – popular designs earn creators more.
+- **Dynamic Pricing:** Token value determines price – popular designs earn creators more.
 
-**Secure Storage:** Blockchain technology protects design files from piracy.
+- **Secure Storage:** Blockchain technology protects design files from piracy.
 
-**Transparent Transactions:** All transactions are publicly verifiable on the blockchain.
+- **Transparent Transactions:** All transactions are publicly verifiable on the blockchain.
 Community
 
-Tokencraft fosters a vibrant community of creators and buyers:
+#### Tokencraft fosters a vibrant community of creators and buyers:
 
-**Creators:** Earn fair compensation, maintain control, and connect with a global audience.
+- **Creators:** Earn fair compensation, maintain control, and connect with a global audience.
 
-**Buyers:** Access high-quality, secure design assets and support talented creators.
+- **Buyers:** Access high-quality, secure design assets and support talented creators.
 
 *This is a work-in-progress for the [DIMO HACK VIT-AP] hackathon. We're actively developing the Tokencraft platform and welcome contributions!*
 
