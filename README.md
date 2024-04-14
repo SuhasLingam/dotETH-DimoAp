@@ -20,7 +20,6 @@ Existing design marketplaces leave creators underpaid and undervalue their work.
 - **Transparent Transactions:** All transactions are publicly verifiable on the blockchain.
 Community
 
-#### Tokencraft fosters a vibrant community of creators and buyers:
 
 - **Creators:** Earn fair compensation, maintain control, and connect with a global audience.
 
@@ -72,6 +71,9 @@ To get the project up and running on your local machine, follow these simple ste
 ## Deployment Note
 > :warning: **MVP and Hackathon Stage**: This project has been deployed on the Core testnet for demonstration and testing purposes. Due to the MVP stage of development and the constraints of a hackathon timeline, we focused on showcasing the core functionalities without implementing a centralized backend. Such a backend would be required for real-time data synchronization and accurate blockchain updates, but developing this component was beyond our scope within the given time frame.
 
+# ***Tokencraft fosters a vibrant community of creators and buyers:*
 
 ## License
 This project is made available under the MIT License - see the [LICENSE](LICENSE) file for detailed information.
+
+
