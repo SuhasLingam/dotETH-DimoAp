@@ -10,6 +10,23 @@ Existing design marketplaces leave creators underpaid and undervalue their work.
 
 Tokencraft leverages web3 technology to create a fairer and more secure design ecosystem:
 
+**Tokenization:** Design files are tokenized, granting creators ownership and control.
+
+**Dynamic Pricing:** Token value determines price – popular designs earn creators more.
+
+**Secure Storage:** Blockchain technology protects design files from piracy.
+
+**Transparent Transactions:** All transactions are publicly verifiable on the blockchain.
+Community
+
+Tokencraft fosters a vibrant community of creators and buyers:
+
+**Creators:** Earn fair compensation, maintain control, and connect with a global audience.
+
+**Buyers:** Access high-quality, secure design assets and support talented creators.
+Getting Started
+
+
 
 
 ## Key Technologies Used
