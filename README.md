@@ -17,8 +17,8 @@ Existing design marketplaces leave creators underpaid and undervalue their work.
 
 - **Secure Storage:** Blockchain technology protects design files from piracy.
 
-- **Transparent Transactions:** All transactions are publicly verifiable on the blockchain.
-Community
+- *Transparent Transactions:** All transactions are publicly verifiable on the blockchain.
+Community**
 
 
 - **Creators:** Earn fair compensation, maintain control, and connect with a global audience.
