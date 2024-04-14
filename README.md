@@ -1,4 +1,4 @@
-#Tokencraft: Where Design Meets Ownership
+## Tokencraft: Where Design Meets Ownership
 
 Tokencraft is a groundbreaking web3 design marketplace built on the [insert blockchain platform - e.g., XDC Network or Ethereum] blockchain. We empower designers to own their work, earn fair compensation, and unlock the true value of their creations.
 
