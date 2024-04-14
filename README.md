@@ -25,7 +25,9 @@ Tokencraft fosters a vibrant community of creators and buyers:
 **Creators:** Earn fair compensation, maintain control, and connect with a global audience.
 
 **Buyers:** Access high-quality, secure design assets and support talented creators.
-Getting Started
+
+***This is a work-in-progress for the [DIMO HACK VIT-AP] hackathon. We're actively developing the Tokencraft platform and welcome contributions!*
+
 
 
 
@@ -36,13 +38,14 @@ Getting Started
 - **Rainbow Wallet**: Integrated for a seamless, secure crypto wallet experience.
 - **Wagmi**: A set of React Hooks for Ethereum, enhancing the development of the web3 frontend.
 
+
 ## Getting Started
 
 To get the project up and running on your local machine, follow these simple steps:
 
 1. **Clone the Project**:
 ```
-    git clone https://github.com/JeyasuryaUR/Cryck
+    https://github.com/SuhasLingam/dotETH-DimoAp.git
 ```
 
 2. **Navigate to the Client Directory**:
