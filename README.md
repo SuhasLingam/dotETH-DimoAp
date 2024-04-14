@@ -38,6 +38,8 @@ Community
 - **Rainbow Wallet**: Integrated for a seamless, secure crypto wallet experience.
 - **Wagmi**: A set of React Hooks for Ethereum, enhancing the development of the web3 frontend.
 
+  ***Together, let's craft a new future for design ownership with Tokencraft!***
+
 
 ## Getting Started
 
