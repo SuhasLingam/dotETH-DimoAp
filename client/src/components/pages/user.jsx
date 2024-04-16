@@ -12,14 +12,14 @@ const userHistory = () => {
             alt="image"
           />
         </div>
-        <p className="mx-4 mt-1 mb-2 text-xl font-bold">ArtCrypto</p>
+        <p className="mx-4 mt-1 mb-2 text-xl font-bold">Suhas</p>
         <div className="flex justify-between mx-4 my-2">
-          <p className="text-sm font-semibold text-green-700">✌100 TXDC</p>
+          <p className="text-sm font-semibold text-green-700">✌110 TXDC</p>
         </div>
         <hr className="text-gray-400 mx-4 my-[11px]" />
         <div className="flex items-center justify-between mx-4 my-2">
           <p className="text-[12px] font-customFont text-violet-900">
-            by ArtCrypto
+            by Suhas
           </p>
         </div>
       </div>

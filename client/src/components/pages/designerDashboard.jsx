@@ -5,6 +5,7 @@ import Navbar from "../navbar";
 import { useWriteContract, useAccount } from "wagmi";
 import { ERC721_ABI, ERC721_ADDRESS } from "../../contracts/ERC721";
 import Popup from "../popup";
+import { Navigate } from "react-router-dom";
 import {
   MARKETPLACE_ABI,
   MARKETPLACE_ADDRESS,
@@ -15,9 +16,10 @@ function DesignerDashboard() {
   const [fileName, setFileName] = useState("No file Selected");
   const [design, setDesign] = useState(null);
   const [DesignFileName, setDesignFileName] = useState("No file Selected");
-  const [popup, setPopup] = useState(false);
   const account = useAccount();
+  const [showPopup, setShowPopup] = useState(false);
   const { writeContract, error, status } = useWriteContract();
+
   const HandleMint = async () => {
     await writeContract({
       abi: ERC721_ABI,
@@ -29,7 +31,6 @@ function DesignerDashboard() {
       ],
     });
   };
-
   const HandleList = async () => {
     await writeContract({
       abi: MARKETPLACE_ABI,
@@ -42,6 +43,7 @@ function DesignerDashboard() {
   return (
     <>
       <Navbar />
+
       <div>
         <div className="h-max flex items-center justify-center w-full bg-white">
           <div className="flex gap-4">
@@ -107,14 +109,14 @@ function DesignerDashboard() {
                   <form
                     action=""
                     onClick={() =>
-                      document.querySelector(".input-field").click()
+                      document.querySelector(".preview-image").click()
                     }
                     className="flex items-center rounded-lg my-3 justify-center border-2 border-gray-600 p-2 border-dashed w-[400px] h-[200px]"
                   >
                     <input
                       type="file"
                       accept="image/*"
-                      className="input-field"
+                      className="preview-image"
                       hidden
                       onChange={({ target: { files } }) => {
                         files[0] && setFileName(files[0].name);
@@ -124,7 +126,11 @@ function DesignerDashboard() {
                       }}
                     />
                     {image ? (
-                      <img src={image} width={40} height={40} alt={fileName} />
+                      <img
+                        src={image}
+                        className="rounded-xl w-full h-full"
+                        alt={fileName}
+                      />
                     ) : (
                       <div className="text-center">
                         <div className="flex items-center justify-center mb-2">
@@ -148,7 +154,7 @@ function DesignerDashboard() {
                   >
                     <input
                       type="file"
-                      accept="image/*"
+                      accept="application/zip"
                       className="input-field"
                       hidden
                       onChange={({ target: { files } }) => {
