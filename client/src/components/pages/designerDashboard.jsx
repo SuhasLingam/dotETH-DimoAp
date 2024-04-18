@@ -18,7 +18,7 @@ function DesignerDashboard() {
   const [DesignFileName, setDesignFileName] = useState("No file Selected");
   const account = useAccount();
   const [showPopup, setShowPopup] = useState(false);
-  const { writeContract, error, status } = useWriteContract();
+  const { writeContract, error, status, isSuccess } = useWriteContract();
 
   const HandleMint = async () => {
     await writeContract({
@@ -30,6 +30,13 @@ function DesignerDashboard() {
         "ipfs://QmPZ9gcCEpqKTo6aq61g2nXGUhM4iCL3ewB6LDXZCtioEB",
       ],
     });
+    if (await !error) {
+      setTimeout(() => {
+        setShowPopup(true);
+      }, [13000]);
+    } else {
+      console.log("Error in Minting");
+    }
   };
   const HandleList = async () => {
     await writeContract({
@@ -38,6 +45,11 @@ function DesignerDashboard() {
       functionName: "list",
       args: ["1", "0x2bC97C3bC9a23D82cd5F11EAD6fcB60B1E566245", "100"],
     });
+    if (await isSuccess) {
+      setShowPopup(true);
+    } else {
+      console.log("Error in Minting");
+    }
   };
 
   return (
@@ -200,6 +212,8 @@ function DesignerDashboard() {
           </div>
         </div>
       </div>
+
+      {showPopup && <Popup />}
     </>
   );
 }
