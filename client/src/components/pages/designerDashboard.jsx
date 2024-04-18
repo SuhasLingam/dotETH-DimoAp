@@ -30,10 +30,8 @@ function DesignerDashboard() {
         "ipfs://QmPZ9gcCEpqKTo6aq61g2nXGUhM4iCL3ewB6LDXZCtioEB",
       ],
     });
-    if (await !error) {
-      setTimeout(() => {
-        setShowPopup(true);
-      }, [13000]);
+    if ((await !error) && (await status) == "success") {
+      setShowPopup(true);
     } else {
       console.log("Error in Minting");
     }
